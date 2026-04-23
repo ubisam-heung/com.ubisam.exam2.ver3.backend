@@ -39,5 +39,6 @@ public class Oauth2Tests {
             .andExpect(is2xx())
             .andExpect(isJson("$.subject", "user1"))
             .andDo(print());
+        
     }
 }
