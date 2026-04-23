@@ -4,14 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
-import javax.print.attribute.AttributeSet;
-
 import org.springframework.data.rest.core.annotation.RestResource;
 import org.springframework.hateoas.Link;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
+import backend.domain.properties.AttributesSet;
 import jakarta.persistence.CollectionTable;
 import jakarta.persistence.Column;
 import jakarta.persistence.ConstraintMode;
@@ -43,7 +42,7 @@ public class Bus {
   private Integer busNumber;
 
   @Column(length = 1024*100)
-  private AttributeSet busType;
+  private AttributesSet busType;
 
   @ManyToOne
   @JoinColumn(foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
