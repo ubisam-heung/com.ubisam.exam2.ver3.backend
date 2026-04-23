@@ -19,6 +19,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import backend.domain.BusRoute;
 import backend.oauth2.Oauth2Docs;
 import backend.rest.busRoutes.BusRouteDocs;
+import backend.rest.busStops.BusStopDocs;
 import io.u2ware.common.data.jpa.repository.query.JpaSpecificationBuilder;
 
 @SpringBootTest
@@ -35,7 +36,7 @@ public class BusRouteTests {
   private BusRouteDocs brd;
 
   @Autowired
-  private BusRouteDocs bsd;
+  private BusStopDocs bsd;
 
   @Autowired
   private BusRouteRepository busRouteRepository;
